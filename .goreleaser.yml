@@ -9,8 +9,8 @@ builds:
     binary: whatever
     ldflags:
       -X main.Date={{.CommitDate}}
-    # mod_timestamp: "{{ .CommitTimestamp }}"
+    mod_timestamp: "{{ .CommitTimestamp }}"
 checksum:
   name_template: 'checksums.txt'
 snapshot:
-  name_template: "{{ .Tag }}-next"
+  name_template: "{{ .Tag }}-snapshot"
